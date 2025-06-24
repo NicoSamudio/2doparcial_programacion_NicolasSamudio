@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.modificacionController">
+   <children>
+      <Button fx:id="btnConfirmar" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="319.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="26.0" prefWidth="126.0" text="Confirmar" />
+      <Button fx:id="btnCancelar" alignment="CENTER" contentDisplay="CENTER" layoutX="342.0" layoutY="319.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="26.0" prefWidth="126.0" text="Cancelar" />
+      <Label fx:id="lblProdcuto" contentDisplay="CENTER" layoutX="4.0" layoutY="80.0" prefHeight="26.0" prefWidth="100.0" text="Producto" />
+      <TextField fx:id="txtProducto" layoutX="330.0" layoutY="74.0" />
+      <Label contentDisplay="CENTER" layoutX="7.0" layoutY="124.0" prefHeight="26.0" prefWidth="100.0" text="Dosis" />
+      <TextField fx:id="txtDosis" layoutX="330.0" layoutY="124.0" />
+      <Label contentDisplay="CENTER" layoutX="3.0" layoutY="169.0" prefHeight="26.0" prefWidth="126.0" text="Fecha de vencimiento" />
+      <TextField fx:id="txtVencimiento" layoutX="331.0" layoutY="169.0" />
+      <Label fx:id="lblExtra" contentDisplay="CENTER" layoutX="9.0" layoutY="214.0" prefHeight="26.0" prefWidth="100.0" text="DatoExtra" />
+      <TextField fx:id="txtDatoExtra" layoutX="331.0" layoutY="214.0" />
+      <ChoiceBox fx:id="cbTipo" layoutX="225.0" layoutY="23.0" onAction="#cambiandoTipo" prefWidth="150.0" />
+   </children>
+</AnchorPane>
